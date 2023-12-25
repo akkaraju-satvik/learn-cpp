@@ -59,8 +59,8 @@ int main() {
   // randomInt();
 
   // * Custom Header Files
-  // - g++ -c foo.cpp -o objects/foo.o
-  // - g++ main.cpp objects/foo.o -o bin/main
+  // - g++ -c src/foo.cpp -o objects/foo.o
+  // - g++ src/main.cpp objects/foo.o -o bin/main
   // - Generalized syntax: g++ main.cpp <header.cpp file>[] -o bin/main
   std::cout << "x: " << foo(10) << "\n";
 
