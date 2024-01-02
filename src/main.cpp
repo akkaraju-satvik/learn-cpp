@@ -1,16 +1,17 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 #include <string>
-
-#include "foo.h"
+#include <vector>
 
 #include "datatypes.cpp"
+#include "foo.h"
 #include "functions.cpp"
-#include "namespaces.cpp"
-#include "type_conversions.cpp"
 #include "inputs.cpp"
-#include "strings.cpp"
+#include "namespaces.cpp"
 #include "randoms.cpp"
+#include "strings.cpp"
+#include "type_conversions.cpp"
+#include "types.cpp"
 
 const string SECRET = "secret";
 
@@ -23,8 +24,8 @@ int main() {
 
   // * Functions
   // functions_implementation();
-  
-  // * Using math.h 
+
+  // * Using math.h
   // std::cout << "Pi is: " << M_PI << "\n";
 
   // * CONSTANTS
@@ -62,8 +63,14 @@ int main() {
   // - g++ -c src/foo.cpp -o objects/foo.o
   // - g++ src/main.cpp objects/foo.o -o bin/main
   // - Generalized syntax: g++ main.cpp <header.cpp file>[] -o bin/main
-  std::cout << "x: " << foo(10) << "\n";
+  // std::cout << "x: " << foo(10) << "\n";
+
+  // * Custom Types using "using" & typedef
+  text_t s = "Satvik";
+  pairlist_t pl = {{"Satvik", 10}, {"Sxtvxk", 20}};
+  for (auto p : pl) {
+    std::cout << p.first << " " << p.second << "\n";
+  }
 
   return 0;
-
 }
