@@ -68,6 +68,8 @@ int main() {
   // * Custom Types using "using" & typedef
   text_t s = "Satvik";
   pairlist_t pl = {{"Satvik", 10}, {"Sxtvxk", 20}};
+  // insert at index 1
+  // pl.insert(pl.begin() + 1, {"Sxtvxk", 30});
   for (auto p : pl) {
     std::cout << p.first << " " << p.second << "\n";
   }
